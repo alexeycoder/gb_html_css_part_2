@@ -11,43 +11,45 @@
 <body>
 	<header class="header  bg_dark">
 		<div id="show-site-menu">
-			<div class="header__content  center">
-				<div class="header__logo hover_brighter">
-					<a href="index.html" title="Home">
-						<img src="images/logo_small.png" width="44" height="38" alt="Logo">
-					</a>
+			<div class="spacing_h">
+				<div class="header__content  center">
+					<div class="header__logo hover_brighter">
+						<a href="index.html" title="Home">
+							<img src="images/logo_small.png" width="44" height="38" alt="Logo">
+						</a>
+					</div>
+					<div class="header__search-bar">
+						<button class="button hover_brighter" title="Find">
+							<svg class="icon" width="27" height="27">
+								<use xlink:href="#icon-search" fill="#e8e8e8" />
+							</svg>
+						</button>
+					</div>
+					<nav class="header__nav">
+						<a class="button  menu-button_show  hover_brighter" href="#show-site-menu"
+							title="Site Menu">
+							<svg class="icon" width="32" height="23">
+								<use xlink:href="#icon-menu" fill="#e8e8e8" />
+							</svg>
+						</a>
+						<a class="button  menu-button_hide  hover_brighter" href="#" title="Site Menu">
+							<svg class="icon" width="32" height="23">
+								<use xlink:href="#icon-menu" fill="#e8e8e8" />
+							</svg>
+						</a>
+						<a class="button  hover_brighter  no-mobile" href="#" title="Your Profile">
+							<svg class="icon" width="29" height="29">
+								<use xlink:href="#icon-user-profile" fill="#e8e8e8" />
+							</svg>
+						</a>
+						<a class="button button-cart hover_brighter  no-mobile" href="#" title="Your Cart">
+							<svg class="icon" width="32" height="29">
+								<use xlink:href="#icon-cart" fill="#e8e8e8" />
+							</svg>
+							<span class="button-cart__qty">5</span>
+						</a>
+					</nav>
 				</div>
-				<div class="header__search-bar">
-					<button class="button hover_brighter" title="Find">
-						<svg class="icon" width="27" height="27">
-							<use xlink:href="#icon-search" fill="#e8e8e8" />
-						</svg>
-					</button>
-				</div>
-				<nav class="header__nav">
-					<a class="button menu-button_show hover_brighter" href="#show-site-menu"
-						title="Site Menu">
-						<svg class="icon" width="32" height="23">
-							<use xlink:href="#icon-menu" fill="#e8e8e8" />
-						</svg>
-					</a>
-					<a class="button menu-button_hide hover_brighter" href="#" title="Site Menu">
-						<svg class="icon" width="32" height="23">
-							<use xlink:href="#icon-menu" fill="#e8e8e8" />
-						</svg>
-					</a>
-					<a class="button hover_brighter" href="#" title="Your Profile">
-						<svg class="icon" width="29" height="29">
-							<use xlink:href="#icon-user-profile" fill="#e8e8e8" />
-						</svg>
-					</a>
-					<a class="button button-cart hover_brighter" href="#" title="Your Cart">
-						<svg class="icon" width="32" height="29">
-							<use xlink:href="#icon-cart" fill="#e8e8e8" />
-						</svg>
-						<span class="button-cart__qty">5</span>
-					</a>
-				</nav>
 			</div>
 
 			<nav class="header__site-menu site-menu">
@@ -100,7 +102,7 @@
 		</div>
 	</section>
 
-	<section class="offer">
+	<section class="offer  spacing_h">
 		<div class="offer__content  center">
 			<div class="offer__item item-women item_topline" role="button">
 				<h3 class="offer__subcategory  item__title">30% off</h3>
@@ -121,7 +123,7 @@
 		</div>
 	</section>
 
-	<section class="products">
+	<section class="products  spacing_h">
 		<div class="products__content  center">
 			<h2 class="products__title">Featured Items</h2>
 			<p class="products__subtitle">Shop for items based on what we featured in this week</p>

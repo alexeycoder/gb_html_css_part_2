@@ -40,6 +40,11 @@ a {
 	margin-right: auto;
 }
 
+.spacing_h {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
 .bg_dark {
 	background-color: var(--dark-color);
 }
@@ -197,6 +202,7 @@ a {
 	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
+	min-height: 363px;
 
 	display: flex;
 	justify-content: center;
@@ -469,16 +475,23 @@ a {
 
 @media (max-width: 1024px) {
 
-	.header__content {
-		min-height: 74px;
+	/* horiz spacing */
+
+	.header .spacing_h {
 		padding-left: 32px;
 		padding-right: 41px;
+	}
+
+	/* various */
+
+	.header__content {
+		min-height: 74px;
 	}
 
 	.header__search-bar,
 	.header__nav {
 		align-self: flex-end;
-		padding-bottom: 1px;
+		padding-bottom: 2px;
 	}
 
 	.intro__title {
@@ -494,12 +507,6 @@ a {
 		padding-bottom: 110px;
 	}
 
-	.offer__content,
-	.products__content {
-		padding-left: 16px;
-		padding-right: 16px;
-	}
-
 	.products__items {
 		padding-top: 72px;
 		padding-bottom: 32px;
@@ -508,5 +515,83 @@ a {
 
 	.products__content {
 		padding-bottom: 70px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	/* horiz spacing */
+
+	.header .spacing_h {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.products.spacing_h {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	/* various */
+
+	.intro__pic {
+		display: none;
+	}
+
+	.intro__right {
+		width: auto;
+	}
+}
+
+@media(max-width: 425px) {
+
+	.no-mobile {
+		display: none;
+	}
+
+	.header__nav {
+		align-self: center;
+	}
+
+	.intro__title {
+		margin-left: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		font-size: 38px;
+		line-height: 30px;
+	}
+
+	.intro__title .title_smaller {
+		font-size: 20px;
+	}
+
+	.offer__content {
+		padding-top: 64px;
+		padding-bottom: 64px;
+
+		grid-template-rows: repeat(3, 1fr) auto;
+		grid-template-columns: auto;
+		grid-template-areas:
+			"women"
+			"men"
+			"kids"
+			"accessories";
+		gap: 32px;
+	}
+
+	.offer__item.item_btmline {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.products__items {
+		padding-top: 64px;
+		padding-bottom: 40px;
+
+	}
+
+	.products__content {
+		padding-bottom: 80px;
 	}
 }
