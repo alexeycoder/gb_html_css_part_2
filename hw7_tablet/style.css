@@ -244,7 +244,8 @@ a {
 
 	display: grid;
 	/* grid-template-rows: 260px 180px; */
-	grid-template-rows: 26fr 18fr;
+	/* grid-template-rows: 26fr 18fr; */
+	grid-template-rows: repeat(2, auto);
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas:
 		"women men kids"
@@ -253,8 +254,6 @@ a {
 }
 
 .offer__item {
-	position: relative;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -268,11 +267,11 @@ a {
 	--lightgray-bg: linear-gradient(var(--lightgray-color), var(--lightgray-color));
 }
 
-.offer__item.item_topline {
+.offer__item.item_common {
 	aspect-ratio: 36 / 26;
 }
 
-.offer__item.item_btmline {
+.offer__item.item_wide {
 	aspect-ratio: 114 / 18;
 }
 
@@ -492,6 +491,7 @@ a {
 
 	.offer__content {
 		padding-bottom: 110px;
+		gap: 20px;
 	}
 
 	.offer__content,
