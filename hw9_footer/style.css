@@ -116,10 +116,12 @@ a {
 
 .hover_brighter:hover {
 	filter: var(--halo-filter);
+	transition: filter 0.3s;
 }
 
 .hover_darker:hover {
 	filter: var(--shadow-filter);
+	transition: filter 0.3s;
 }
 
 /* HEADER */
@@ -222,7 +224,7 @@ a {
 	/* display: none; */
 	z-index: -999;
 	opacity: 0;
-	transition: opacity 1s;
+	transition: opacity 0.5s;
 }
 
 .button-menu_show {
@@ -319,6 +321,8 @@ a {
 	--shade-bg: linear-gradient(var(--shade-color), var(--shade-color));
 	--lightgray-color: rgba(211, 211, 211, 0.3);
 	--lightgray-bg: linear-gradient(var(--lightgray-color), var(--lightgray-color));
+
+	transition: text-shadow 0.3s;
 }
 
 .offer_common {
@@ -455,6 +459,12 @@ a {
 	color: white;
 	font-size: 14px;
 	border: 1px solid white;
+
+	transition: box-shadow 0.3s;
+}
+
+.product__button-add svg {
+	transition: fill 0.3s;
 }
 
 .product__button-add:hover {
